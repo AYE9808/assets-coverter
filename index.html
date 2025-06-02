@@ -176,6 +176,7 @@ input[type="file"]:hover::file-selector-button {
 Animated Button
 */
 
+
 .animated-button {
   position: relative;
   display: flex;
@@ -271,6 +272,37 @@ Animated Button
 
 }
 /*
+Button 2
+*/
+
+.bottone1 {
+  display: none;
+ padding-left: 33px;
+ padding-right: 33px;
+ padding-bottom: 16px;
+ padding-top: 16px;
+ border-radius: 9px;
+ background: #d5f365;
+ border: none;
+ font-family: inherit;
+ text-align: center;
+ cursor: pointer;
+ transition: 0.4s;
+}
+
+.bottone1:hover {
+
+ box-shadow: 7px 5px 56px -14px #C3D900;
+}
+
+.bottone1:active {
+ transform: scale(0.97);
+ box-shadow: 7px 5px 56px -10px #C3D900;
+}
+
+
+
+/*
 Media Querys
 */
 /* Dispositivos pequeños (hasta 480px) */
@@ -326,6 +358,7 @@ Media Querys
 
   }
   button{
+    display: none;
     margin-bottom: 25%;
   }
   .animated-button .arr-1 {
@@ -340,6 +373,10 @@ Media Querys
 span{
   text-align: center;
 }
+.bottone1{
+  display: flex;
+}
+
 }
 
 
@@ -387,6 +424,9 @@ span{
                         ></path>
                       </svg>
                     </button>
+
+                  <button class="bottone1"><strong>Discover features</strong></button> 
+                    
                 
                   </div>
                 
