@@ -6,7 +6,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="Convierte imágenes a constantes en JavaScript y mejora la organización del código de tus proyectos.">
-      <meta name="keywords" content="JavaScript, imágenes, convertidor, desarrollo web, imagestojs, converter, jsconverter">
+      <meta name="keywords" content="JavaScript, images js, convertidor, images to js, imagestojs, converter, jsconverter">
       <meta name="author" content="EricMarreroCaparroso">
       <meta name="google-site-verification" content="MC5ptZG9QtiRM6uJ0JI6ho8NI50pC4Gw-akAtsfMCUA" />
       <title>Images to Js</title>
@@ -271,35 +271,6 @@ Animated Button
   flex-direction: column;
 
 }
-/*
-Button 2
-*/
-
-.bottone1 {
-  display: none;
- padding-left: 33px;
- padding-right: 33px;
- padding-bottom: 16px;
- padding-top: 16px;
- border-radius: 9px;
- background: #d5f365;
- border: none;
- font-family: inherit;
- text-align: center;
- cursor: pointer;
- transition: 0.4s;
-}
-
-.bottone1:hover {
-
- box-shadow: 7px 5px 56px -14px #C3D900;
-}
-
-.bottone1:active {
- transform: scale(0.97);
- box-shadow: 7px 5px 56px -10px #C3D900;
-}
-
 
 
 /*
@@ -350,7 +321,7 @@ Media Querys
 
   input[type="file"] {
     color: transparent;
-    margin-left: 70%;
+    margin-left: 75%;
     padding-left: 0;
     width: 100%;
     
@@ -358,23 +329,24 @@ Media Querys
 
   }
   button{
-    display: none;
     margin-bottom: 25%;
   }
+  .animated-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .animated-button .arr-1 {
-  display: none;
+  display: flex
 }
 .animated-button .text {
-  position: relative;
-  z-index: 1;
-  transform: translateX(-12px);
-  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-}
-span{
+  display: none;
   text-align: center;
-}
-.bottone1{
-  display: flex;
+  
+  z-index: 1;
+  transition: none;
+  
+  
 }
 
 }
@@ -406,7 +378,7 @@ span{
             <aside></aside>
 
             <section>
-                <h2>Image Converter to JavaScript </h2>
+                <h2>Designed for developers</h2>
                 <p>Importing images as constants in JavaScript improves code organization, facilitates reuse, and allows centralized path management, preventing errors due to changes in the file structure.</p>
                 <div class="input-container">
                     <input type="file" id="folderInput" webkitdirectory directory multiple />
@@ -416,7 +388,8 @@ span{
                           d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
                         ></path>
                       </svg>
-                      <span class="text">Genrate</span>
+                      
+                      <span class="text">Generate</span>
                       <span class="circle"></span>
                       <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -424,8 +397,6 @@ span{
                         ></path>
                       </svg>
                     </button>
-
-                  <button class="bottone1"><strong>Discover features</strong></button> 
                     
                 
                   </div>
