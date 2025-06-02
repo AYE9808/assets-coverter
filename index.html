@@ -303,13 +303,18 @@ Media Querys
   }
   .input-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    
   }
+  input{
+    width: 25%;
+  }
+
 
   input[type="file"] {
     color: transparent;
-    margin: 0;
+    margin-left: 70%;
     padding-left: 0;
     width: 100%;
     
@@ -319,7 +324,16 @@ Media Querys
   button{
     margin-bottom: 25%;
   }
-  
+  .animated-button .arr-1 {
+  display: none;
+}
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
 }
 
 
