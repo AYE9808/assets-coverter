@@ -259,6 +259,78 @@ Animated Button
   height: 220px;
   opacity: 1;
 }
+/*
+Media Querys
+*/
+/* Dispositivos pequeños (hasta 480px) */
+@media screen and (max-width: 480px) {
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    width: 100vw;
+  }
+  main{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 5%;
+  }
+  h1{
+    text-align: center;
+  }
+  h2{
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  p{
+    
+  }
+  section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+  }
+  .input-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  input[type="file"] {
+    color: transparent;
+    margin: 0;
+    padding-left: 0;
+    width: 100%;
+    
+    
+
+  }
+  button{
+    margin-bottom: 25%;
+  }
+  
+}
+
+
+
+
+
+/* iPhone 16 Pro (1179px de ancho) */
+@media screen and (max-width: 1179px) {
+  .header {
+    font-size: 18px;
+  }
+  .button {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  
+}
+
 
 
 
@@ -274,22 +346,24 @@ Animated Button
                 <p>Importar imágenes como constantes en JavaScript mejora la organización del código, facilita la reutilización y permite mantener rutas centralizadas, evitando errores por cambios en la estructura de archivos.</p>
                 <div class="input-container">
                     <input type="file" id="folderInput" webkitdirectory directory multiple />
-                </div>
+                    <button class="animated-button" onclick="generateAndDownloadJS()" aria-label="Generar archivo JavaScript">
+                      <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                        ></path>
+                      </svg>
+                      <span class="text">Generar archivo JS</span>
+                      <span class="circle"></span>
+                      <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                        ></path>
+                      </svg>
+                    </button>
                 
-                <button class="animated-button" onclick="generateAndDownloadJS()" aria-label="Generar archivo JavaScript">
-                    <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                      ></path>
-                    </svg>
-                    <span class="text">Generar archivo JS</span>
-                    <span class="circle"></span>
-                    <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                      ></path>
-                    </svg>
-                  </button>
+                  </div>
+                
+               
                   
                 <script src="script.js"></script>
             </section>
